@@ -1,0 +1,11 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Aircraft",
+			"request": "launch",
+			"mainClass": "Aircraft.Aircraft",
+			"projectName": "avaj-launcher_db4c9c0d"
+		}
+	]
+}
