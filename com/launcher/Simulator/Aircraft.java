@@ -21,8 +21,4 @@ public class Aircraft {
 	private long nextId() {
 		return ++idCounter;
 	}
-
-	public static void main(String[] args) {
-		System.out.println("Hello there!");
-	}
 }

@@ -2,6 +2,13 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "CodeLens (Launch) - Simulator",
+			"request": "launch",
+			"mainClass": "com.launcher.Simulator.Simulator",
+			"projectName": "avaj-launcher_db4c9c0d"
+		},
+		{
+			"type": "java",
 			"name": "CodeLens (Launch) - Aircraft",
 			"request": "launch",
 			"mainClass": "Aircraft.Aircraft",
