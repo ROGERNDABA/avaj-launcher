@@ -1,8 +1,8 @@
 package Helicopter;
 
-import Aircraft.Aircraft;
-import Coorrdinates.Coordinates;
-import WeatherTower.WeatherTower;
+import Aircraft;
+import Coordinates;
+import WeatherTower;
 
 /**
  * Helicopter
