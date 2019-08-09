@@ -12,19 +12,20 @@ import com.launcher.Simulator.WeatherTower;
 public class Simulator {
 
 	public static final String _RESET = "\u001B[0m";
-	public static final String _BLACK = "\u001B[30m";
-	public static final String _RED = "\u001B[31m";
-	public static final String _GREEN = "\u001B[32m";
-	public static final String _YELLOW = "\u001B[33m";
-	public static final String _BLUE = "\u001B[34m";
-	public static final String _PURPLE = "\u001B[35m";
-	public static final String _CYAN = "\u001B[36m";
-	public static final String _WHITE = "\u001B[37m";
+	public static final String _BLACK = "\u001B[1;30m";
+	public static final String _RED = "\u001B[1;31m";
+	public static final String _GREEN = "\u001B[1;32m";
+	public static final String _YELLOW = "\u001B[1;33m";
+	public static final String _BLUE = "\u001B[1;34m";
+	public static final String _PURPLE = "\u001B[1;35m";
+	public static final String _CYAN = "\u001B[1;36m";
+	public static final String _WHITE = "\u001B[1;37m";
 
 	public static void main(String[] args) {
 
 		AircraftFactory acf = new AircraftFactory();
 		WeatherTower wt = new WeatherTower();
+
 		try {
 			if (args.length < 1)
 				throw new Exception("Too few arguments");
@@ -54,7 +55,7 @@ public class Simulator {
 					int lat = Integer.parseInt(parts[3]);
 					int h = Integer.parseInt(parts[4]);
 
-					acf.newAircraft(parts[0], parts[1], lon, lat, h);
+					acf.newAircraft(parts[0], parts[1], lon, lat, h).registerTower(wt);
 					System.out.println(Arrays.toString(parts));
 				} catch (NumberFormatException nfe) {
 					System.err.println(_RED + "Error: First line of file must be an Integer" + _RESET);
