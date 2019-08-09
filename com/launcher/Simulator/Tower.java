@@ -16,7 +16,7 @@ public class Tower {
 	}
 
 	public void unregister(Flyable flyable) {
-		this.observer.add(flyable);
+		this.observer.remove(flyable);
 	}
 
 	protected void conditionsChanged() {
