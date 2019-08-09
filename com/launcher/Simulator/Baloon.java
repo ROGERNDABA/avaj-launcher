@@ -5,12 +5,13 @@ import com.launcher.Simulator.WeatherTower;
 import com.launcher.Simulator.Aircraft;
 
 /**
- * Helicopter
+ * Baloon
  */
-public class Helicopter extends Aircraft {
+public class Baloon extends Aircraft {
+
 	private WeatherTower weatherTower;
 
-	Helicopter(String name, Coordinates coordinates) {
+	Baloon(String name, Coordinates coordinates) {
 		super(name, coordinates);
 	}
 
