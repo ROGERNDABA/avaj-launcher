@@ -1,6 +1,10 @@
 package com.launcher.Simulator;
 
 import java.io.*;
+import java.util.Arrays;
+
+import com.launcher.Simulator.AircraftFactory;
+import com.launcher.Simulator.WeatherTower;
 
 /**
  * Simulator
@@ -19,6 +23,8 @@ public class Simulator {
 
 	public static void main(String[] args) {
 
+		AircraftFactory acf = new AircraftFactory();
+		WeatherTower wt = new WeatherTower();
 		try {
 			if (args.length < 1)
 				throw new Exception("Too few arguments");
@@ -27,26 +33,37 @@ public class Simulator {
 			BufferedReader b = new BufferedReader(new FileReader(file));
 
 			String line = "";
-			int lineNbr = 1;
-
-			if ((line = b.readLine()) != null) {
-				tries = Integer.parseInt(line);
-				if (tries < 0) {
-					b.close();
-					throw new Exception("Error: number must be positive Interger");
-				}
-			}
+			int lineNbr = 0;
 
 			while ((line = b.readLine()) != null) {
-				++lineNbr;
+
+				if (line.trim().length() == 0)
+					continue;
+				if (lineNbr == 0) {
+					tries = Integer.parseInt(line);
+					if (tries < 0) {
+						b.close();
+						throw new Exception("Error: number must be positive Integer");
+					}
+					++lineNbr;
+					continue;
+				}
+				String[] parts = line.split(" ");
 				try {
-					System.out.println("---> " + lineNbr + " : " + line);
+					int lon = Integer.parseInt(parts[2]);
+					int lat = Integer.parseInt(parts[3]);
+					int h = Integer.parseInt(parts[4]);
+
+					acf.newAircraft(parts[0], parts[1], lon, lat, h);
+					System.out.println(Arrays.toString(parts));
 				} catch (NumberFormatException nfe) {
 					System.err.println(_RED + "Error: First line of file must be an Integer" + _RESET);
 				} catch (Exception e) {
 				}
 			}
 			b.close();
+			if (lineNbr == 0)
+				throw new Exception("File is empty");
 		} catch (NumberFormatException nfe) {
 			System.err.println(_RED + "Error: First line of file must be an Integer" + _RESET);
 		} catch (Exception e) {
