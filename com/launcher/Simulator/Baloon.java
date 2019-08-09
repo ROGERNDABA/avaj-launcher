@@ -3,11 +3,12 @@ package com.launcher.Simulator;
 import com.launcher.Simulator.Coordinates;
 import com.launcher.Simulator.WeatherTower;
 import com.launcher.Simulator.Aircraft;
+import com.launcher.Simulator.Flyable;
 
 /**
  * Baloon
  */
-public class Baloon extends Aircraft {
+public class Baloon extends Aircraft implements Flyable {
 
 	private WeatherTower weatherTower;
 
