@@ -1,4 +1,4 @@
-package WeatherTower;
+package com.launcher.Simulator;
 
 /**
  * WeatherTower

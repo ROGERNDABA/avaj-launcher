@@ -1,4 +1,4 @@
-package Coorrdinates;
+package com.launcher.Simulator;
 
 /**
  * Coordinates

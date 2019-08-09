@@ -1,6 +1,6 @@
-package Aircraft;
+package com.launcher.Simulator;
 
-import Coorrdinates.*;
+import com.launcher.Simulator.Coordinates;
 
 /**
  * Aircraft

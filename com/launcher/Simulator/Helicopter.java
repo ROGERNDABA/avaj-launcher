@@ -1,8 +1,8 @@
-package Helicopter;
+package com.launcher.Simulator;
 
-import Aircraft;
-import Coordinates;
-import WeatherTower;
+import com.launcher.Simulator.Aircraft;
+import com.launcher.Simulator.Coordinates;
+import com.launcher.Simulator.WeatherTower;
 
 /**
  * Helicopter
