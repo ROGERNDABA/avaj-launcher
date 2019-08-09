@@ -20,6 +20,8 @@ public class Simulator {
 	public static void main(String[] args) {
 
 		try {
+			if (args.length < 1)
+				throw new Exception("Too few arguments");
 			int tries = 0;
 			File file = new File(args[0]);
 			BufferedReader b = new BufferedReader(new FileReader(file));
@@ -29,8 +31,10 @@ public class Simulator {
 
 			if ((line = b.readLine()) != null) {
 				tries = Integer.parseInt(line);
-				if (tries < 0)
+				if (tries < 0) {
+					b.close();
 					throw new Exception("Error: number must be positive Interger");
+				}
 			}
 
 			while ((line = b.readLine()) != null) {
@@ -42,10 +46,12 @@ public class Simulator {
 				} catch (Exception e) {
 				}
 			}
+			b.close();
 		} catch (NumberFormatException nfe) {
 			System.err.println(_RED + "Error: First line of file must be an Integer" + _RESET);
 		} catch (Exception e) {
 			System.err.println(_RED + "Error: " + e.getMessage() + _RESET);
 		}
 	}
+
 }
