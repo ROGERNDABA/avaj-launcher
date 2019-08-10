@@ -1,8 +1,6 @@
 package com.launcher.Simulator;
 
 import java.io.*;
-import java.util.Arrays;
-
 import com.launcher.Simulator.AircraftFactory;
 import com.launcher.Simulator.WeatherTower;
 import com.launcher.Simulator.WeatherProvider;
