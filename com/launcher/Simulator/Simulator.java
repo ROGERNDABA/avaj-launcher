@@ -75,7 +75,7 @@ public class Simulator {
 			System.err.println(_RED + "Error: " + e.getMessage() + _RESET);
 		}
 
-		WeatherProvider weatherProvider = WeatherProvider.getProvider();
+		WeatherProvider.getProvider();
 		while (tries > 0) {
 			wt.changeWeather();
 			tries--;
