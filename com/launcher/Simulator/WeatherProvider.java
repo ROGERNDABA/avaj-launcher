@@ -8,14 +8,14 @@ import com.launcher.Simulator.Coordinates;
  * WeatherProvider
  */
 public class WeatherProvider {
-	private WeatherProvider weatherProvider = new WeatherProvider();
-	private String[] weather = { "SUN", "FOG", "SNOW", "RAIN" };
+	private static WeatherProvider weatherProvider = new WeatherProvider();
+	private static String[] weather = { "SUN", "FOG", "SNOW", "RAIN" };
 
 	private WeatherProvider() {
 	}
 
-	public WeatherProvider getProvider() {
-		return this.weatherProvider;
+	public static WeatherProvider getProvider() {
+		return weatherProvider;
 	}
 
 	public String getCurrentWeather(Coordinates coordinates) {
