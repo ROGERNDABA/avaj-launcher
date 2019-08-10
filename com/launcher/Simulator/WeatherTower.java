@@ -8,9 +8,10 @@ import com.launcher.Simulator.Tower;
  */
 public class WeatherTower extends Tower {
 	public String getWeather(Coordinates coordinates) {
-		return "Roger";
+		return WeatherProvider.getProvider().getCurrentWeather(coordinates);
 	}
 
 	void changeWeather() {
+		this.conditionsChanged();
 	}
 }

@@ -14,7 +14,7 @@ public class WeatherProvider {
 	private WeatherProvider() {
 	}
 
-	public WeatherProvider getWeather() {
+	public WeatherProvider getProvider() {
 		return this.weatherProvider;
 	}
 
