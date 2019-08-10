@@ -22,7 +22,6 @@ public class Tower {
 	protected void conditionsChanged() {
 		for (int i = 0;i < observer.size();i++) {
 			observer.get(i).updateConditions();
-			System.out.println("===== " + observer.get(i).toString());
 		}
 	}
 }
