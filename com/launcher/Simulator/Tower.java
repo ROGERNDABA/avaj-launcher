@@ -12,6 +12,8 @@ public class Tower {
 	private List<Flyable> observer = new ArrayList<Flyable>();
 
 	public void register(Flyable flyable) {
+		if (observer.contains(flyable))
+			return;
 		this.observer.add(flyable);
 	}
 
@@ -20,8 +22,10 @@ public class Tower {
 	}
 
 	protected void conditionsChanged() {
-		for (int i = 0;i < observer.size();i++) {
+		// for (Flyable flyable : observer) {
+		// 	flyable.updateConditions();
+		// }
+		for (int i = 0;i < observer.size();i++)
 			observer.get(i).updateConditions();
-		}
 	}
 }
