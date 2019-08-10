@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 import com.launcher.Simulator.AircraftFactory;
 import com.launcher.Simulator.WeatherTower;
+import com.launcher.Simulator.WeatherProvider;
 
 /**
  * Simulator
@@ -34,19 +35,19 @@ public class Simulator {
 			BufferedReader b = new BufferedReader(new FileReader(file));
 
 			String line = "";
-			int lineNbr = 0;
+			int lineNbr = 1;
 
 			while ((line = b.readLine()) != null) {
 
 				if (line.trim().length() == 0)
 					continue;
-				if (lineNbr == 0) {
+				if (lineNbr == 1) {
 					tries = Integer.parseInt(line);
 					if (tries < 0) {
 						b.close();
 						throw new Exception("Error: number must be positive Integer");
 					}
-					++lineNbr;
+					lineNbr++;
 					continue;
 				}
 				String[] parts = line.split(" ");
@@ -58,7 +59,9 @@ public class Simulator {
 					acf.newAircraft(parts[0], parts[1], lon, lat, h).registerTower(wt);
 					System.out.println(Arrays.toString(parts));
 				} catch (NumberFormatException nfe) {
-					System.err.println(_RED + "Error: First line of file must be an Integer" + _RESET);
+					System.err.println(
+							_RED + "Error Line " + lineNbr + ": 3rd, 4th and 5th arguments must be numbers" + _RESET);
+					break;
 				} catch (Exception e) {
 				}
 			}
@@ -70,6 +73,7 @@ public class Simulator {
 		} catch (Exception e) {
 			System.err.println(_RED + "Error: " + e.getMessage() + _RESET);
 		}
+
 	}
 
 }
