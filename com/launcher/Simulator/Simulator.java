@@ -26,11 +26,12 @@ public class Simulator {
 
 		AircraftFactory acf = new AircraftFactory();
 		WeatherTower wt = new WeatherTower();
+		int tries = 0;
+
 
 		try {
 			if (args.length < 1)
 				throw new Exception("Too few arguments");
-			int tries = 0;
 			File file = new File(args[0]);
 			BufferedReader b = new BufferedReader(new FileReader(file));
 
@@ -57,7 +58,7 @@ public class Simulator {
 					int h = Integer.parseInt(parts[4]);
 
 					acf.newAircraft(parts[0], parts[1], lon, lat, h).registerTower(wt);
-					System.out.println(Arrays.toString(parts));
+
 				} catch (NumberFormatException nfe) {
 					System.err.println(
 							_RED + "Error Line " + lineNbr + ": 3rd, 4th and 5th arguments must be numbers" + _RESET);
@@ -72,6 +73,12 @@ public class Simulator {
 			System.err.println(_RED + "Error: First line of file must be an Integer" + _RESET);
 		} catch (Exception e) {
 			System.err.println(_RED + "Error: " + e.getMessage() + _RESET);
+		}
+
+		WeatherProvider weatherProvider = WeatherProvider.getProvider();
+		while (tries > 0) {
+			wt.changeWeather();
+			tries--;
 		}
 
 	}

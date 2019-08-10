@@ -2,6 +2,7 @@ package com.launcher.Simulator;
 
 import com.launcher.Simulator.Coordinates;
 import com.launcher.Simulator.Tower;
+import com.launcher.Simulator.WeatherProvider;
 
 /**
  * WeatherTower
