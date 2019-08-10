@@ -4,6 +4,7 @@ import com.launcher.Simulator.Coordinates;
 import com.launcher.Simulator.WeatherTower;
 import com.launcher.Simulator.Aircraft;
 import com.launcher.Simulator.Flyable;
+import com.launcher.Simulator.Colors;
 
 /**
  * Helicopter
@@ -18,6 +19,13 @@ public class Helicopter extends Aircraft implements Flyable {
 
 	public void updateConditions() {
 		String weather = this.weatherTower.getWeather(this.coordinates);
+		String msg[] = {
+			Colors._GREEN + "🌞  I see trees are green🌳, red roses too🌹" + Colors._RESET,
+			Colors._CYAN + "🌧️  All it does is rain" + Colors._RESET,
+			Colors._PURPLE + "🌫️  It sure is foggy outside" + Colors._RESET,
+			Colors._WHITE + "⛄  Do you wanna build a snowman" + Colors._RESET
+		};
+		int msgIndex = 0;
 		switch (weather) {
 		case "SUN": {
 			this.coordinates = new Coordinates(
@@ -32,13 +40,15 @@ public class Helicopter extends Aircraft implements Flyable {
 				coordinates.getLongitude() + 5,
 				coordinates.getLatitude(),
 				coordinates.getHeight());
+			msgIndex = 1;
 		}
-			break;
+		break;
 		case "FOG": {
 			this.coordinates = new Coordinates(
 				coordinates.getLongitude() + 1,
 				coordinates.getLatitude(),
 				coordinates.getHeight());
+			msgIndex = 2;
 		}
 			break;
 		case "SNOW": {
@@ -46,12 +56,14 @@ public class Helicopter extends Aircraft implements Flyable {
 				coordinates.getLongitude(),
 				coordinates.getLatitude(),
 				coordinates.getHeight() - 12);
+			msgIndex = 3;
 		}
 			break;
 
 		default:
 			break;
 		}
+		System.out.println("Helicopter#" + this.name + "("+ this.id +"): " + msg[msgIndex]);
 		if (this.coordinates.getHeight() == 0) {
 			this.weatherTower.unregister(this);
 			System.out.println("Tower says: Helicopter#" + this.name + "(" + this.id + ")" + " unregistered from weather tower.");

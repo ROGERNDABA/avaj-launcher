@@ -6,21 +6,14 @@ import java.util.Arrays;
 import com.launcher.Simulator.AircraftFactory;
 import com.launcher.Simulator.WeatherTower;
 import com.launcher.Simulator.WeatherProvider;
+import com.launcher.Simulator.Colors;
 
 /**
  * Simulator
  */
 public class Simulator {
 
-	public static final String _RESET = "\u001B[0m";
-	public static final String _BLACK = "\u001B[1;30m";
-	public static final String _RED = "\u001B[1;31m";
-	public static final String _GREEN = "\u001B[1;32m";
-	public static final String _YELLOW = "\u001B[1;33m";
-	public static final String _BLUE = "\u001B[1;34m";
-	public static final String _PURPLE = "\u001B[1;35m";
-	public static final String _CYAN = "\u001B[1;36m";
-	public static final String _WHITE = "\u001B[1;37m";
+
 
 	public static void main(String[] args) {
 
@@ -61,7 +54,7 @@ public class Simulator {
 
 				} catch (NumberFormatException nfe) {
 					System.err.println(
-							_RED + "Error Line " + lineNbr + ": 3rd, 4th and 5th arguments must be numbers" + _RESET);
+							Colors._RED + "Error Line " + lineNbr + ": 3rd, 4th and 5th arguments must be numbers" + Colors._RESET);
 					break;
 				} catch (Exception e) {
 				}
@@ -70,13 +63,14 @@ public class Simulator {
 			if (lineNbr == 0)
 				throw new Exception("File is empty");
 		} catch (NumberFormatException nfe) {
-			System.err.println(_RED + "Error: First line of file must be an Integer" + _RESET);
+			System.err.println(Colors._RED + "Error: First line of file must be an Integer" + Colors._RESET);
 		} catch (Exception e) {
-			System.err.println(_RED + "Error: " + e.getMessage() + _RESET);
+			System.err.println(Colors._RED + "Error: " + e.getMessage() + Colors._RESET);
 		}
 
 		WeatherProvider.getProvider();
 		while (tries > 0) {
+			System.out.println("++++> " + tries);
 			wt.changeWeather();
 			tries--;
 		}
