@@ -65,7 +65,7 @@ public class JetPlane extends Aircraft implements Flyable {
 		}
 		System.out.println("JetPlane#" + this.name + "(" + this.id + "): " + msg[msgIndex]);
 
-		if (this.coordinates.getHeight() == 0) {
+		if (this.coordinates.getHeight() <= 0) {
 			this.weatherTower.unregister(this);
 			System.out.println("Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " unregistered from weather tower.");
 		}

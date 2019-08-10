@@ -63,7 +63,7 @@ public class Helicopter extends Aircraft implements Flyable {
 			break;
 		}
 		System.out.println("Helicopter#" + this.name + "("+ this.id +"): " + msg[msgIndex]);
-		if (this.coordinates.getHeight() == 0) {
+		if (this.coordinates.getHeight() <= 0) {
 			this.weatherTower.unregister(this);
 			System.out.println("Tower says: Helicopter#" + this.name + "(" + this.id + ")" + " unregistered from weather tower.");
 		}

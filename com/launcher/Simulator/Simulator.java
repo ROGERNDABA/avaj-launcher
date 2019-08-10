@@ -70,7 +70,6 @@ public class Simulator {
 
 		WeatherProvider.getProvider();
 		while (tries > 0) {
-			System.out.println("++++> " + tries);
 			wt.changeWeather();
 			tries--;
 		}
