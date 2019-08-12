@@ -1,7 +1,8 @@
-package com.launcher.Simulator;
+package com.launcher.simulator.vehicles;
 
-import com.launcher.Simulator.Flyable;
-import com.launcher.Simulator.Helicopter;
+import com.launcher.simulator.vehicles.Flyable;
+import com.launcher.simulator.vehicles.Helicopter;
+import com.launcher.simulator.Coordinates;
 
 /**
  * AircraftFactory

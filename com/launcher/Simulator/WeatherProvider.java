@@ -1,8 +1,8 @@
-package com.launcher.Simulator;
+package com.launcher.simulator;
 
 import java.util.Random;
 
-import com.launcher.Simulator.Coordinates;
+import com.launcher.simulator.Coordinates;
 
 /**
  * WeatherProvider

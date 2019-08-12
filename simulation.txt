@@ -1,0 +1,136 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+Baloon#B1(1): ⛄  Do you wanna build a snowman
+Baloon#B2(2): 🌫️  It sure is foggy outside
+JetPlane#J1(3): ⛄  With luck, it might even snow for us
+Helicopter#H1(4): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H2(5): 🌞  Keep your face to the sun and you will never see the shadows
+Helicopter#H3(6): ⛄  The snow doesn't give a soft white damn whom it touches
+Baloon#B3(7): 🌫️  It sure is foggy outside
+JetPlane#J2(8): 🌞  Make hay while the sun shines
+Helicopter#H4(9): 🌞  Keep your face to the sun and you will never see the shadows
+Baloon#B1(1): 🌞  I see trees are green🌳, red roses too🌹
+Baloon#B2(2): 🌞  I see trees are green🌳, red roses too🌹
+JetPlane#J1(3): ⛄  With luck, it might even snow for us
+Helicopter#H1(4): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H2(5): ⛄  The snow doesn't give a soft white damn whom it touches
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+Baloon#B3(7): 🌧️  All it does is rain
+JetPlane#J2(8): 🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!
+Helicopter#H4(9): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Baloon#B1(1): 🌧️  All it does is rain
+Baloon#B2(2): 🌞  I see trees are green🌳, red roses too🌹
+JetPlane#J1(3): ⛄  With luck, it might even snow for us
+Helicopter#H1(4): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H2(5): ⛄  The snow doesn't give a soft white damn whom it touches
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+Baloon#B3(7): 🌫️  It sure is foggy outside
+JetPlane#J2(8): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H4(9): 🌧️  The best thing one can do when it's raining is to let it rain
+Baloon#B1(1): 🌧️  All it does is rain
+Tower says: Baloon#B1(1) unregistered from weather tower.
+JetPlane#J1(3): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H1(4): ⛄  The snow doesn't give a soft white damn whom it touches
+Helicopter#H2(5): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+Baloon#B3(7): ⛄  Do you wanna build a snowman
+JetPlane#J2(8): ⛄  With luck, it might even snow for us
+Helicopter#H4(9): ⛄  The snow doesn't give a soft white damn whom it touches
+Baloon#B2(2): ⛄  Do you wanna build a snowman
+JetPlane#J1(3): 🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!
+Helicopter#H1(4): ⛄  The snow doesn't give a soft white damn whom it touches
+Tower says: Helicopter#H1(4) unregistered from weather tower.
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+Baloon#B3(7): ⛄  Do you wanna build a snowman
+Tower says: Baloon#B3(7) unregistered from weather tower.
+Helicopter#H4(9): 🌞  Keep your face to the sun and you will never see the shadows
+Baloon#B2(2): 🌫️  It sure is foggy outside
+JetPlane#J1(3): 🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!
+Helicopter#H2(5): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Helicopter#H3(6): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+JetPlane#J2(8): ⛄  With luck, it might even snow for us
+Helicopter#H4(9): ⛄  The snow doesn't give a soft white damn whom it touches
+Baloon#B2(2): 🌧️  All it does is rain
+JetPlane#J1(3): ⛄  With luck, it might even snow for us
+Helicopter#H2(5): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H3(6): 🌞  Keep your face to the sun and you will never see the shadows
+JetPlane#J2(8): 🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!
+Helicopter#H4(9): ⛄  The snow doesn't give a soft white damn whom it touches
+Baloon#B2(2): ⛄  Do you wanna build a snowman
+JetPlane#J1(3): 🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!
+Helicopter#H2(5): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Helicopter#H3(6): ⛄  The snow doesn't give a soft white damn whom it touches
+JetPlane#J2(8): ⛄  With luck, it might even snow for us
+Helicopter#H4(9): 🌞  Keep your face to the sun and you will never see the shadows
+Baloon#B2(2): 🌧️  All it does is rain
+JetPlane#J1(3): ⛄  With luck, it might even snow for us
+Tower says: JetPlane#J1(3) unregistered from weather tower.
+Helicopter#H3(6): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+JetPlane#J2(8): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H4(9): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Baloon#B2(2): 🌧️  All it does is rain
+Helicopter#H2(5): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Helicopter#H3(6): ⛄  The snow doesn't give a soft white damn whom it touches
+JetPlane#J2(8): 🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!
+Helicopter#H4(9): 🌞  Keep your face to the sun and you will never see the shadows
+Baloon#B2(2): ⛄  Do you wanna build a snowman
+Helicopter#H2(5): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+JetPlane#J2(8): 🌞  Make hay while the sun shines
+Helicopter#H4(9): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Baloon#B2(2): ⛄  Do you wanna build a snowman
+Tower says: Baloon#B2(2) unregistered from weather tower.
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+JetPlane#J2(8): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H4(9): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H2(5): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H3(6): 🌞  Keep your face to the sun and you will never see the shadows
+JetPlane#J2(8): 🌞  Make hay while the sun shines
+Helicopter#H4(9): 🌞  Keep your face to the sun and you will never see the shadows
+Helicopter#H2(5): ⛄  The snow doesn't give a soft white damn whom it touches
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+JetPlane#J2(8): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H4(9): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H2(5): 🌞  Keep your face to the sun and you will never see the shadows
+Helicopter#H3(6): 🌞  Keep your face to the sun and you will never see the shadows
+JetPlane#J2(8): 🌞  Make hay while the sun shines
+Helicopter#H4(9): ⛄  The snow doesn't give a soft white damn whom it touches
+Helicopter#H2(5): 🌞  Keep your face to the sun and you will never see the shadows
+Helicopter#H3(6): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+JetPlane#J2(8): 🌞  Make hay while the sun shines
+Helicopter#H4(9): ⛄  The snow doesn't give a soft white damn whom it touches
+Helicopter#H2(5): ⛄  The snow doesn't give a soft white damn whom it touches
+Helicopter#H3(6): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+JetPlane#J2(8): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H4(9): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Helicopter#H2(5): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Helicopter#H3(6): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+JetPlane#J2(8): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H4(9): 🌞  Keep your face to the sun and you will never see the shadows
+Helicopter#H2(5): ⛄  The snow doesn't give a soft white damn whom it touches
+Tower says: Helicopter#H2(5) unregistered from weather tower.
+JetPlane#J2(8): 🌧️  Come rain or sunshine...actually it's just rain
+Helicopter#H4(9): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H3(6): 🌧️  The best thing one can do when it's raining is to let it rain
+JetPlane#J2(8): 🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!
+Helicopter#H4(9): 🌧️  The best thing one can do when it's raining is to let it rain
+Helicopter#H3(6): ⛄  The snow doesn't give a soft white damn whom it touches
+JetPlane#J2(8): ⛄  With luck, it might even snow for us
+Helicopter#H4(9): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+Helicopter#H3(6): ⛄  The snow doesn't give a soft white damn whom it touches
+JetPlane#J2(8): 🌞  Make hay while the sun shines
+Helicopter#H4(9): ⛄  The snow doesn't give a soft white damn whom it touches
+Tower says: Helicopter#H4(9) unregistered from weather tower.
+Helicopter#H3(6): ⛄  The snow doesn't give a soft white damn whom it touches
+JetPlane#J2(8): 🌞  Make hay while the sun shines
+Helicopter#H3(6): 🌫️  I like the muted sounds, the shroud of grey, and the silence that comes with fog
+JetPlane#J2(8): ⛄  With luck, it might even snow for us
+Helicopter#H3(6): ⛄  The snow doesn't give a soft white damn whom it touches
+JetPlane#J2(8): 🌞  Make hay while the sun shines

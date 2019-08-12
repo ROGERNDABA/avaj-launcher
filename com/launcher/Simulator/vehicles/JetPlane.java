@@ -1,10 +1,10 @@
-package com.launcher.Simulator;
+package com.launcher.simulator.vehicles;
 
-import com.launcher.Simulator.Coordinates;
-import com.launcher.Simulator.WeatherTower;
-import com.launcher.Simulator.Aircraft;
-import com.launcher.Simulator.Flyable;
-import com.launcher.Simulator.avajFileWritter;
+import com.launcher.simulator.Coordinates;
+import com.launcher.simulator.WeatherTower;
+import com.launcher.simulator.vehicles.Aircraft;
+import com.launcher.simulator.vehicles.Flyable;
+import com.launcher.simulator.avajFileWritter;
 
 /**
  * JetPlane

@@ -1,4 +1,4 @@
-package com.launcher.Simulator;
+package com.launcher.simulator;
 
 import java.io.*;
 

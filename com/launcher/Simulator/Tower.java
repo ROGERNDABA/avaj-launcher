@@ -1,6 +1,6 @@
-package com.launcher.Simulator;
+package com.launcher.simulator;
 
-import com.launcher.Simulator.Flyable;
+import com.launcher.simulator.vehicles.Flyable;
 import java.util.List;
 import java.util.ArrayList;
 

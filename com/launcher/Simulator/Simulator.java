@@ -1,18 +1,15 @@
-package com.launcher.Simulator;
+package com.launcher.simulator;
 
 import java.io.*;
-import com.launcher.Simulator.AircraftFactory;
-import com.launcher.Simulator.WeatherTower;
-import com.launcher.Simulator.WeatherProvider;
-import com.launcher.Simulator.Colors;
+import com.launcher.simulator.vehicles.AircraftFactory;
+import com.launcher.simulator.WeatherTower;
+import com.launcher.simulator.WeatherProvider;
+import com.launcher.simulator.Colors;
 
 /**
  * Simulator
  */
 public class Simulator {
-
-
-
 	public static void main(String[] args) {
 
 		AircraftFactory acf = new AircraftFactory();
@@ -48,6 +45,8 @@ public class Simulator {
 					continue;
 				}
 				String[] parts = line.split(" ");
+				if (parts.length != 5)
+					throw new Exception(" Line " + lineNbr + ": There must be exactly 5 params");
 				try {
 					int lon = Integer.parseInt(parts[2]);
 					int lat = Integer.parseInt(parts[3]);

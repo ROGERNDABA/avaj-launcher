@@ -1,8 +1,8 @@
-package com.launcher.Simulator;
+package com.launcher.simulator;
 
-import com.launcher.Simulator.Coordinates;
-import com.launcher.Simulator.Tower;
-import com.launcher.Simulator.WeatherProvider;
+import com.launcher.simulator.Coordinates;
+import com.launcher.simulator.Tower;
+import com.launcher.simulator.WeatherProvider;
 
 /**
  * WeatherTower

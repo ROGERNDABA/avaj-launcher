@@ -1,4 +1,4 @@
-package com.launcher.Simulator;
+package com.launcher.simulator;
 
 /**
  * Coordinates
@@ -9,21 +9,21 @@ public class Coordinates {
 	private int latitude;
 	private int height;
 
-	Coordinates(int longitude, int latitude, int height) {
+	public Coordinates(int longitude, int latitude, int height) {
 		this.longitude = longitude;
 		this.latitude = latitude;
 		this.height = height;
 	}
 
-	int getLongitude() {
+	public int getLongitude() {
 		return this.longitude;
 	}
 
-	int getLatitude() {
+	public int getLatitude() {
 		return this.latitude;
 	}
 
-	int getHeight() {
+	public int getHeight() {
 		return this.height;
 	}
 }
