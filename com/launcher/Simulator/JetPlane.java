@@ -4,6 +4,7 @@ import com.launcher.Simulator.Coordinates;
 import com.launcher.Simulator.WeatherTower;
 import com.launcher.Simulator.Aircraft;
 import com.launcher.Simulator.Flyable;
+import com.launcher.Simulator.avajFileWritter;
 
 /**
  * JetPlane
@@ -20,10 +21,10 @@ public class JetPlane extends Aircraft implements Flyable {
 	public void updateConditions() {
 		String weather = this.weatherTower.getWeather(this.coordinates);
 		String msg[] = {
-			Colors._GREEN + "🌞  I see trees are green🌳, red roses too🌹" + Colors._RESET,
-			Colors._CYAN + "🌧️  All it does is rain" + Colors._RESET,
-			Colors._PURPLE + "🌫️  It sure is foggy outside" + Colors._RESET,
-			Colors._WHITE + "⛄  Do you wanna build a snowman" + Colors._RESET
+			"🌞  Make hay while the sun shines",
+			"🌧️  Come rain or sunshine...actually it's just rain",
+			"🌫️  Sometimes when you lose your way in the fog, you end up in a beautiful place!",
+			"⛄  With luck, it might even snow for us"
 		};
 		int msgIndex = 0;
 		switch (weather) {
@@ -63,11 +64,11 @@ public class JetPlane extends Aircraft implements Flyable {
 		default:
 			break;
 		}
-		System.out.println("JetPlane#" + this.name + "(" + this.id + "): " + msg[msgIndex]);
+		new avajFileWritter("JetPlane#" + this.name + "(" + this.id + "): " + msg[msgIndex] + "\n");
 
 		if (this.coordinates.getHeight() <= 0) {
 			this.weatherTower.unregister(this);
-			System.out.println("Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " unregistered from weather tower.");
+			new avajFileWritter("Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " unregistered from weather tower.\n");
 		}
 
 	}
@@ -75,7 +76,7 @@ public class JetPlane extends Aircraft implements Flyable {
 	public void registerTower(WeatherTower weatherTower) {
 		this.weatherTower = weatherTower;
 		this.weatherTower.register(this);
-		System.out.println("Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
+		new avajFileWritter("Tower says: JetPlane#" + this.name + "(" + this.id + ")" + " registered to weather tower.\n");
 	}
 
 }

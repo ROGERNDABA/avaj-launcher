@@ -24,10 +24,15 @@ public class Simulator {
 			if (args.length < 1)
 				throw new Exception("Too few arguments");
 			File file = new File(args[0]);
+			File simulationFile = new File("simulation.txt");
 			BufferedReader b = new BufferedReader(new FileReader(file));
 
 			String line = "";
 			int lineNbr = 1;
+
+			if (simulationFile.exists()){
+				simulationFile.delete();
+			}
 
 			while ((line = b.readLine()) != null) {
 
