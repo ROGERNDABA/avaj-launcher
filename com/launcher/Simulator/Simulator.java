@@ -62,7 +62,7 @@ public class Simulator {
 				}
 			}
 			b.close();
-			if (lineNbr == 0)
+			if (lineNbr == 1)
 				throw new Exception("File is empty");
 		} catch (NumberFormatException nfe) {
 			System.err.println(Colors._RED + "Error: First line of file must be an Integer" + Colors._RESET);
